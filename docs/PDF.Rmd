@@ -1,28 +1,18 @@
 ---
-title: "[VECTORES AUTOREGRESIVOS (VAR)](https://github.com/Ortiz-Cevallos/VAR/tree/master/docs/PDF)"
+title: "VECTORES AUTOREGRESIVOS (VAR)"
 author: "[Luis Ortiz-Cevallos](https://ortiz-cevallos.github.io/MYSELF/)"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    css: style.css
-    theme: united
-    toc: true
-    toc_float:
-      collapsed: false
-      smooth_scroll: true
-    toc_depth: 3
-    number_sections: true
-    code_folding: hide
-    code_download: true
+  bookdown::pdf_book:
+    includes:
+    in_header: preamble.tex
+    latex_engine: xelatex
+    citation_package: natbib
+    keep_tex: yes
+  bookdown::epub_book: default
 bibliography: [book.bib, packages.bib]
 link-citations: true
 ---
-<script>
-   $(document).ready(function() {
-     $head = $('#header');
-     $head.prepend('<img src=\"logo2.png\" style=\"float: right;width: 50px;\"/>')
-   });
-</script>
 
 
 # INTRODUCCIÓN
@@ -83,3 +73,4 @@ e\end{bmatrix}
 
 
 # Referencias {-}
+
